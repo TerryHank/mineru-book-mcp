@@ -1,0 +1,15 @@
+[build-system]
+requires=["hatchling"]
+build-backend="hatchling.build"
+[project]
+name="mineru-book-mcp"
+version="0.1.0"
+requires-python=">=3.10"
+dependencies=["mcp>=1.12,<2", "pyyaml>=6", "pypdf>=4",]
+[project.scripts]
+mineru-book-mcp="skill_service.server:main"
+[tool.hatch.build.targets.wheel]
+packages=["src/skill_service"]
+[tool.hatch.build]
+exclude=["**/__pycache__/**","**/*.pyc"]
+
