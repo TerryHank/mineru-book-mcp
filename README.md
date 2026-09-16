@@ -7,3 +7,16 @@
     uvx --from git+https://github.com/TerryHank/mineru-book-mcp.git mineru-book-mcp
 
 Standard API 使用服务环境变量 `MINERU_TOKEN`；仓库不包含任何凭据。
+
+## ModelScope 配置
+
+```json
+{
+  "mcpServers": {
+    "mineru": {
+      "command": "uvx",
+      "args": ["--from", "git+https://github.com/TerryHank/mineru-book-mcp.git", "mineru-book-mcp"]
+    }
+  }
+}
+```
